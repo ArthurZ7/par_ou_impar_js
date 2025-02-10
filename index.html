@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Par ou Ímpar</title>
+</head>
+<body>
+    <header>
+         <div>
+            <p>Nível: </p>
+            <select name="dificuldade" id="dificuldade">
+                <option value="">Selecione</option>
+                <option value="1">Fácil</option>
+                <option value="2">Médio</option>
+                <option value="3">Difícil</option>
+            </select>
+        </div>
+        <div>
+            <p>Tempo: <span id="temporizador">00:00</span></p>
+        </div>
+
+         <div class="acoes">
+            <input type="button" id="btnIniciar" value="Iniciar">
+            <input type="button" id="btnPausar" value="Pausar">
+            <input type="button" id="btnParar" value="Parar">
+        </div>
+    </header>
+    <main>
+        <p id="numero">_</p>
+    </main>
+    <footer>
+        <div>
+            <p>Acertos: <span id="qntAcertos">0</span> (<span id="porcentAcertos">0</span>%)</p>
+        </div>
+        <div>
+            <p>Erros: <span id="qntErros">0</span></p>
+        </div>
+        <div>
+            <p>Números pares sorteados: <span id="qntNumPares">0</span></p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
